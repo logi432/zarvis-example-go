@@ -1,0 +1,16 @@
+---
+application:
+  name: "zarvis-example-go"
+  project: "another"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "images"
+    size: "500"
+    type: "slow_hdd"
+    mount_point: "/app"
+routers:
+- name: "main-zarvis-example-go"
+  routes:
+  - application_name: "zarvis-example-go"
+    paths:
+    - "/*"
